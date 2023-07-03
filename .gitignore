@@ -3,3 +3,5 @@
 .vscode
 __pycach__/
 test/*
+log/
+.idea/

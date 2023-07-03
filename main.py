@@ -68,6 +68,7 @@ class Trainer():
             self.agent.end_episode(e, self.logger)
             self.logger.write('reward/Reward', episode_reward, e)
             self.evaluate(e)
+            print(f"Episode {e} finished with reward {episode_reward}")
 
     def log(self, global_step, data):
         losses, td_errors = data[0], data[1]
